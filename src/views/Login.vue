@@ -1,13 +1,17 @@
-<script >
-import { RouterLink } from 'vue-router'
-export default{
-  RouterLink,
+<script>
+import LOGIN from '../components/LoginComponents.vue'
+
+export default {
+  components: {
+    LOGIN
+  }
+
 }
 </script>
-
 <template>
-  <RouterLink></RouterLink>
+  <LOGIN />
 
+  
 </template>
 
 <style scoped lang="scss"></style>

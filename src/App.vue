@@ -3,23 +3,25 @@ import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/Header.vue';
 import Main from './views/main.vue';
 import Login from './views/Login.vue';
-export default {
-  components: {
+  export default{
+    components:{
+    RouterLink,
     Header,
-    RouterView,
     Main,
     Login,
   }
-}
-</script>
+  }
+
+
+    </script>
 
 <template>
-  <div class="header">
+<div class="header">
     <Header />
   </div>
   <div class="content">
+    <RouterView />
     
-    <Main/>
   </div>
 
 
